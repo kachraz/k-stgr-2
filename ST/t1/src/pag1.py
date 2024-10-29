@@ -1,4 +1,5 @@
 import streamlit as st
+from src.u import pic_func
 
 
 def mark_down_test() -> None:
@@ -29,7 +30,7 @@ print("Hello World");
 
 def main_page_function() -> None:
     st.title("Page 1")
-    st.image("https://picsum.photos/200")
+    pic_func()
     mark_down_test()
 
 

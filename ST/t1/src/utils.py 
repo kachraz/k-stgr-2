@@ -1,2 +1,0 @@
-from streamlit import st
-st.image("https://picsum.photos/200")
