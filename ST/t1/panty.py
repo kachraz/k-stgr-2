@@ -3,6 +3,9 @@ import streamlit as st
 
 # Page Setup here
 def page_setup():
+    # Settting the page width as wide
+    st.set_page_config(layout="wide")
+
     pg1 = st.Page(
         page="src/pag1.py",
         title="Page 1",
@@ -26,7 +29,7 @@ def page_setup():
         {
             "ArmpitSniff": [pg1],
             "PantySniff": [pg2, pg3],
-        }
+        },
     )
 
     pg.run()
