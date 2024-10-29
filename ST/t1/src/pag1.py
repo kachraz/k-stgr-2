@@ -29,7 +29,7 @@ print("Hello World");
 
 def main_page_function() -> None:
     st.title("Page 1")
-    st.image("https://picsum.photos/200/300")
+    st.image("https://picsum.photos/200")
     mark_down_test()
 
 
