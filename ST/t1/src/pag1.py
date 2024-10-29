@@ -32,6 +32,11 @@ def main_page_function() -> None:
     st.title("Page 1")
     pic_func()
     mark_down_test()
+    st.balloons()
+    st.warning("""
+Sucking and fucking
+dangerous
+""")
 
 
 # Execute Function
