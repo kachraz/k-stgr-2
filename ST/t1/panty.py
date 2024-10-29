@@ -32,6 +32,14 @@ def page_setup():
         },
     )
 
+    img1 = "https://i.ibb.co/9VXhzzP/image.png"
+    st.logo(
+        img1,
+    )
+    st.sidebar.warning(
+        "This is a sidebar",
+    )
+
     pg.run()
 
 
