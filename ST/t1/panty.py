@@ -23,7 +23,10 @@ def page_setup():
 
     # -- Setting up the navigation ---
     pg = st.navigation(
-        pages=[pg1, pg2, pg3],
+        {
+            "ArmpitSniff": [pg1],
+            "PantySniff": [pg2, pg3],
+        }
     )
 
     pg.run()
