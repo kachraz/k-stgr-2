@@ -30,10 +30,12 @@ def pagez() -> None:
     with co1:
         st.page_link("src/Intro.py", label="Home", icon="🏠")
         st.page_link("src/c1.py", label="Chapter 1", icon="1️⃣")
+        st.page_link("src/c2.py", label="Chapter 1", icon="2️⃣")
 
     with co2:
         st.write("Home Page")
         st.write("General panty")
+        st.write("Chatper 2 - Focus on text elements")
 
 
 # Call Page Function

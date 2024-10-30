@@ -2,6 +2,10 @@ import streamlit as st
 
 
 def B1() -> None:
+    # Rerturn Home Page
+    st.page_link("src/Intro.py", label="Home", icon="⬅️", use_container_width=True)
+    st.divider()
+
     st.header("Chapter 1 - General Panties ")
 
     st.write("Hello, World! From Chapter 1")
@@ -37,6 +41,8 @@ def B1() -> None:
     print("panty")
     pr = st.button("LickMe")
     print(pr)
+    pr2 = st.button("LickMe2")
+    print(pr2)
 
 
 # Execiting the page function

@@ -22,7 +22,7 @@ def page_setup():
     )
     p3 = st.Page(
         page="src/c2.py",
-        title="Ch2",
+        title="Ch2 - Text Elements",
         icon="👋",
     )
 
