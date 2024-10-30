@@ -37,7 +37,7 @@ def form1() -> None:
 def form2() -> None:
     # This is your custom form which you are writing here
     st.title("User Info")
-    with st.form(key="my_form", clear_on_submit=True):
+    with st.form(key="m2", clear_on_submit=True):
         name = st.text_input("Enter your name :")
         age = st.number_input("Enter your age :")
         submit = st.form_submit_button("Submit")
@@ -56,7 +56,7 @@ def form3() -> None:
             "Select your gender :", ("Male", "Female", "Other", "Rapist")
         ),
     }
-    with st.form(key="my_f3", clear_on_submit=True):
+    with st.form(key="m3", clear_on_submit=True):
         submit = st.form_submit_button("Submit")
     if submit:
         if not all(fo_val.values()):
@@ -84,6 +84,9 @@ def B5() -> None:
     st.divider()
     "## New Cstom Form"
     form3()
+
+    st.divider()
+    "## Above from in a column format"
 
 
 ######
