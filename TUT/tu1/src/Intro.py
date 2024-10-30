@@ -23,5 +23,19 @@ def bodu() -> None:
     st.markdown(m1)
 
 
+def pagez() -> None:
+    st.markdown("## Navigation")
+    co1, co2 = st.columns(2)
+
+    with co1:
+        st.page_link("src/Intro.py", label="Home", icon="🏠")
+        st.page_link("src/c1.py", label="Chapter 1", icon="1️⃣")
+
+    with co2:
+        st.write("Home Page")
+        st.write("General panty")
+
+
 # Call Page Function
 bodu()
+pagez()

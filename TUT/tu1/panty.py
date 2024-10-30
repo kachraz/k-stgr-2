@@ -4,7 +4,9 @@ import streamlit as st
 # Page Setup here
 def page_setup():
     # Settting the page width as wide
-    st.set_page_config(layout="wide")
+    st.set_page_config(
+        layout="wide",
+    )
 
     p1 = st.Page(
         page="src/Intro.py",
