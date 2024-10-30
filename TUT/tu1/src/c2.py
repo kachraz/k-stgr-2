@@ -32,7 +32,10 @@ def drinkJuice():
     st.divider()
     "Making Images"
     st.image("https://picsum.photos/200")
-    st.image(os.path.join(os.getcwd(), "../../kh", "1z.jpg"), width=50)
+    st.image(
+        "https://raw.githubusercontent.com/kachraz/k-stgr-2/refs/heads/main/kh/1z.jpg",
+        width=50,
+    )
 
     st.divider()
 
