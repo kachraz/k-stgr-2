@@ -26,11 +26,17 @@ def page_setup():
         icon="👋",
     )
 
+    p4 = st.Page(
+        page="src/c3.py",
+        title="Ch3 - Data Elements",
+        icon="👋",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
         {
-            "ArmpitSniff": [p1],
-            "PantySniff": [p2, p3],
+            "Booty": [p1],
+            "Pussy": [p2, p3, p4],
         },
     )
 
