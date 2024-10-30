@@ -32,11 +32,17 @@ def page_setup():
         icon="👋",
     )
 
+    p5 = st.Page(
+        page="src/c4.py",
+        title="Ch4 - Chart Elements",
+        icon="👋",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
         {
             "Booty": [p1],
-            "Pussy": [p2, p3, p4],
+            "Pussy": [p2, p3, p4, p5],
         },
     )
 
