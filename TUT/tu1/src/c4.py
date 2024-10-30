@@ -16,6 +16,11 @@ scatter_data = pd.DataFrame(
     }
 )
 
+map_data = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=["lat", "lon"],
+)
+
 
 def B4() -> None:
     st.page_link("src/Intro.py", label="Home", icon="⬅️", use_container_width=True)
@@ -31,6 +36,11 @@ def B4() -> None:
     st.divider()
     st.write("Scatter Plot")
     st.scatter_chart(scatter_data)
+
+    st.divider()
+    st.write("Map Plot")
+    st.dataframe(map_data, use_container_width=True)
+    st.map(map_data)
 
 
 ################
