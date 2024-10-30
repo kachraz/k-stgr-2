@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 
-# Form function here
+############# Form function here ################
 def form1() -> None:
     c1, c2 = st.columns(2)
     with c1:
@@ -46,6 +46,24 @@ def form2() -> None:
         st.image("https://i.ibb.co/0Mwq0Yk/IMG-20220818-WA0000.jpg")
 
 
+def form3() -> None:
+    # This is your custom form which you are writing here
+    fo_val = {
+        "Name": st.text_input("Enter your name :"),
+        "Age": st.number_input("Enter your age :"),
+        "Gender": st.radio(
+            "Select your gender :", ("Male", "Female", "Other", "Rapist")
+        ),
+    }
+    with st.form(key="my_f3", clear_on_submit=True):
+        submit = st.form_submit_button("Submit")
+    if submit:
+        st.write(
+            f"Your name is {fo_val['Name']} and age is {fo_val['Age']} and gender is {fo_val['Gender']}"
+        )
+
+
+########## MAIN FUNCTION ##########
 def B5() -> None:
     st.page_link("src/Intro.py", label="Home", icon="⬅️", use_container_width=True)
     st.divider()
@@ -56,6 +74,10 @@ def B5() -> None:
     st.divider()
     "## New one here"
     form2()
+
+    st.divider()
+    "## New Cstom Form"
+    form3()
 
 
 ######
