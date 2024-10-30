@@ -1,7 +1,31 @@
 import streamlit as st
+import time
+
+
+## Dialog function
+@st.dialog("WARNING")
+def dialog() -> None:
+    img1 = "https://media1.tenor.com/m/sLgNruA4tsgAAAAd/warning-lights.gif"
+    st.image(img1, width=200)
+    st.error("""
+             This is for testing only
+             Using real panties will result
+             in loss !!
+             """)
+    st.divider()
+    b1 = st.button("AGREE")
+    b2 = st.button("DISAGREE")
+    if b1:
+        st.success("Thank you for agreeing")
+    if b2:
+        img2 = "https://media1.tenor.com/m/uYLpNOIkWusAAAAd/chris-tucker-friday.gif"
+        st.image(img2, width=500)
+        time.sleep(3)
+        st.switch_page("src/warn.py")
 
 
 def B1() -> None:
+    dialog()
     # Rerturn Home Page
     st.page_link("src/Intro.py", label="Home", icon="⬅️", use_container_width=True)
     st.divider()

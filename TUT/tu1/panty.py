@@ -44,11 +44,17 @@ def page_setup():
         icon="👋",
     )
 
+    p7 = st.Page(
+        page="src/warn.py",
+        title="Ch5 - Form And Data Elements",
+        icon="👋",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
         {
             "Booty": [p1],
-            "Pussy": [p2, p3, p4, p5, p6],
+            "Pussy": [p2, p3, p4, p5, p6, p7],
         },
     )
 
