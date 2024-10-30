@@ -46,8 +46,8 @@ def page_setup():
 
     p7 = st.Page(
         page="src/warn.py",
-        title="Ch5 - Form And Data Elements",
-        icon="👋",
+        title="Warning",
+        icon="⚠️",
     )
 
     # -- Setting up the navigation ---
