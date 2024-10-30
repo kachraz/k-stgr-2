@@ -35,6 +35,7 @@ def pagez() -> None:
         st.page_link("src/c4.py", label="Chapter 4", icon="4️⃣")
         st.page_link("src/c5.py", label="Chapter 5", icon="5️⃣")
         st.page_link("src/c6.py", label="Chapter 6", icon="6️⃣")
+        st.page_link("src/c7.py", label="PantySniff", icon="7️⃣")
 
     with co2:
         st.write("Home Page")

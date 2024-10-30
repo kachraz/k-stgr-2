@@ -56,9 +56,20 @@ def page_setup():
         icon="👋",
     )
 
+    p8 = st.Page(
+        page="src/c7.py",
+        title="C7 - SniffingPanties",
+        icon="👋",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
-        {"Booty": [p1], "Pussy": [p2, p3, p4, p5, p6, p7], "Warning": [warn1]},
+        {
+            "Booty": [p1],
+            "Pussy": [p2, p3, p4, p5, p6, p7],
+            "Warning": [warn1],
+            "Fetish": [p8],
+        },
     )
 
     img1 = "https://i.ibb.co/9VXhzzP/image.png"
