@@ -38,11 +38,17 @@ def page_setup():
         icon="👋",
     )
 
+    p6 = st.Page(
+        page="src/c5.py",
+        title="Ch5 - Form And Data Elements",
+        icon="👋",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
         {
             "Booty": [p1],
-            "Pussy": [p2, p3, p4, p5],
+            "Pussy": [p2, p3, p4, p5, p6],
         },
     )
 
