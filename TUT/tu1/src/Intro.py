@@ -34,6 +34,7 @@ def pagez() -> None:
         st.page_link("src/c3.py", label="Chapter 3", icon="3️⃣")
         st.page_link("src/c4.py", label="Chapter 4", icon="4️⃣")
         st.page_link("src/c5.py", label="Chapter 5", icon="5️⃣")
+        st.page_link("src/c6.py", label="Chapter 6", icon="6️⃣")
 
     with co2:
         st.write("Home Page")
@@ -42,6 +43,7 @@ def pagez() -> None:
         st.write("Chatper 3 - Data Elements")
         st.write("Chatper 4 - Chart Elements")
         st.write("Chatper 5 - Form")
+        st.write("Chatper 6 - Advanced Forms")
 
 
 # Call Page Function

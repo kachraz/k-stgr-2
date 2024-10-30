@@ -44,18 +44,21 @@ def page_setup():
         icon="👋",
     )
 
-    p7 = st.Page(
+    warn1 = st.Page(
         page="src/warn.py",
         title="Warning",
         icon="⚠️",
     )
 
+    p7 = st.Page(
+        page="src/c6.py",
+        title="Ch6 - Advanced Form Elements",
+        icon="⚠️",
+    )
+
     # -- Setting up the navigation ---
     pg = st.navigation(
-        {
-            "Booty": [p1],
-            "Pussy": [p2, p3, p4, p5, p6, p7],
-        },
+        {"Booty": [p1], "Pussy": [p2, p3, p4, p5, p6, p7], "Warning": [warn1]},
     )
 
     img1 = "https://i.ibb.co/9VXhzzP/image.png"
