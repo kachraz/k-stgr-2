@@ -34,6 +34,17 @@ def form1() -> None:
             st.write("Form here")
 
 
+def form2() -> None:
+    # This is your custom form which you are writing here
+    st.title("User Info")
+    with st.form(key="my_form", clear_on_submit=True):
+        name = st.text_input("Enter your name :")
+        age = st.number_input("Enter your age :")
+
+        print(name, age)
+        st.form_submit_button("Submit")
+
+
 def B5() -> None:
     st.page_link("src/Intro.py", label="Home", icon="⬅️", use_container_width=True)
     st.divider()
@@ -43,6 +54,7 @@ def B5() -> None:
 
     st.divider()
     "## New one here"
+    form2()
 
 
 ######
