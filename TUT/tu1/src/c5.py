@@ -48,6 +48,7 @@ def form2() -> None:
 
 def form3() -> None:
     # This is your custom form which you are writing here
+    # When you do it this way the form button is outside
     fo_val = {
         "Name": st.text_input("Enter your name :"),
         "Age": st.number_input("Enter your age :"),
@@ -58,9 +59,14 @@ def form3() -> None:
     with st.form(key="my_f3", clear_on_submit=True):
         submit = st.form_submit_button("Submit")
     if submit:
-        st.write(
-            f"Your name is {fo_val['Name']} and age is {fo_val['Age']} and gender is {fo_val['Gender']}"
-        )
+        if not all(fo_val.values()):
+            st.error("Please fill all the fields")
+        else:
+            st.toast("Form Submitted")
+            st.snow()
+            st.write(
+                f"Your name is {fo_val['Name']} and age is {fo_val['Age']} and gender is {fo_val['Gender']}"
+            )
 
 
 ########## MAIN FUNCTION ##########
