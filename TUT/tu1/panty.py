@@ -14,13 +14,13 @@ def page_setup():
     )
 
     p2 = st.Page(
-        page="src/p2.py",
-        title="Page 2",
+        page="src/c1.py",
+        title="Ch1",
         icon="👋",
     )
     p3 = st.Page(
-        page="src/p3.py",
-        title="Page 3",
+        page="src/c2.py",
+        title="Ch2",
         icon="👋",
     )
 

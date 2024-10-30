@@ -34,7 +34,7 @@ c1() {
     echo -e "${GR}uv add streamlit pandas matplotlib rich${NC}"
     echo -e "${GR}uvx streamlit run panty.py${NC}"
     echo -e "Executing...."
-    uv add streamlit pandas matplotlib rich
+    uv add streamlit pandas matplotlib numpy requests rich
     uv tree
     uvx streamlit run panty.py
 }
