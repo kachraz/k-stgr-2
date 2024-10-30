@@ -40,9 +40,10 @@ def form2() -> None:
     with st.form(key="my_form", clear_on_submit=True):
         name = st.text_input("Enter your name :")
         age = st.number_input("Enter your age :")
-
-        print(name, age)
-        st.form_submit_button("Submit")
+        submit = st.form_submit_button("Submit")
+    if submit:
+        st.write(f"Your name is {name} and age is {age}")
+        st.image("https://i.ibb.co/0Mwq0Yk/IMG-20220818-WA0000.jpg")
 
 
 def B5() -> None:
