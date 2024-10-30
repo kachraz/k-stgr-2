@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+# import matplotlib.pyplot as plt
 
 # Chart data here to be used in the functions
 c_d1 = pd.DataFrame(
@@ -42,11 +42,12 @@ def B4() -> None:
     st.dataframe(map_data, use_container_width=True)
     st.map(map_data)
 
-    st.divider()
-    st.write("Line Plot")
-    fig, ax = plt.subplots()
-    ax.plot([1, 2, 3, 4], [1, 4, 9, 16])
-    st.pyplot(fig)
+    # This doesnt work with UV for some reason
+    # st.divider()
+    # st.write("Line Plot")
+    # fig, ax = plt.subplots()
+    # ax.plot([1, 2, 3, 4], [1, 4, 9, 16])
+    # st.pyplot(fig)
 
 
 ################
