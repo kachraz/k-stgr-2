@@ -7,8 +7,8 @@ def page_setup():
     st.set_page_config(layout="wide")
 
     p1 = st.Page(
-        page="src/p1.py",
-        title="Page 1",
+        page="src/Intro.py",
+        title="Introduction to panty sniffing",
         icon="👋",
         default=True,
     )
