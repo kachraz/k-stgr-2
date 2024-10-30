@@ -53,7 +53,7 @@ def page_setup():
     p7 = st.Page(
         page="src/c6.py",
         title="Ch6 - Advanced Form Elements",
-        icon="⚠️",
+        icon="👋",
     )
 
     # -- Setting up the navigation ---
